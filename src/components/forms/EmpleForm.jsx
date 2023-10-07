@@ -58,7 +58,7 @@ export function EmpleForm() {
     localStorage.setItem("empleObject", JSON.stringify(emple));
     return Promise.resolve(localStorage.getItem("empleObject"))
       .then((r) => console.log("Empleado: ", r))
-      .then(nav("/DinoCifrasPS"))
+      .then(nav("/DinoCifrasContablesPS"))
       .catch((er) => console.log("Error: ", er));
   }
 
