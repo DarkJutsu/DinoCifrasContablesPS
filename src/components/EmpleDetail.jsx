@@ -10,7 +10,6 @@ import { getVacacionesEqui } from "../utils/getVacacionesEqui.function";
 import { getAguinaldo } from "../utils/getAguinaldo.function";
 import { BackBtn } from "./BackBtn";
 import { getAguinaldoEqui } from "../utils/getAguinaldoEqui.function";
-import { getDays } from "../utils/getDays.function";
 import { getDespido } from "../utils/getDespido.function";
 import { getRenuncia } from "../utils/getRenuncia.function";
 
@@ -188,7 +187,7 @@ export function EmpleDetail() {
 
         <div className="-mx-3 md:flex mt-8">
           <div className="md:w-fit ml-5 mt-3">
-            <Link to="/DinoCifrasPS/planilla" state={{ state: param }}>
+            <Link to="/DinoCifrasContablesPS/planilla" state={{ state: param }}>
               <div className="flex items-center font-comfortaa bg-slate-300 w-fit py-2 px-4 rounded-md cursor-pointer shadow-md">
                 <span className="text-1xl text-slate-800 font-bold">
                   Planilla de Pagos
@@ -197,7 +196,7 @@ export function EmpleDetail() {
             </Link>
           </div>
           <div className="md:w-fit ml-5 mt-3">
-            <Link to="/DinoCifrasPS/planilla" state={{ state: param }}>
+            <Link to="/DinoCifrasContablesPS/planilla" state={{ state: param }}>
               <div className="flex items-center font-comfortaa bg-slate-300 w-fit py-2 px-4 rounded-md cursor-pointer shadow-md">
                 <span className="text-1xl text-slate-800 font-bold">
                   Boleta de Pago
@@ -206,7 +205,7 @@ export function EmpleDetail() {
             </Link>
           </div>
           <div className="md:w-fit ml-5 mt-3">
-            <Link to="/DinoCifrasPS/planilla" state={{ state: param }}>
+            <Link to="/DinoCifrasContablesPS/planilla" state={{ state: param }}>
               <div className="flex items-center font-comfortaa bg-slate-300 w-fit py-2 px-4 rounded-md cursor-pointer shadow-md">
                 <span className="text-1xl text-slate-800 font-bold">
                   Boleta de Indemnización
@@ -215,7 +214,7 @@ export function EmpleDetail() {
             </Link>
           </div>
           <div className="md:w-fit ml-5 mt-3">
-            <Link to="/DinoCifrasPS/planilla" state={{ state: param }}>
+            <Link to="/DinoCifrasContablesPS/planilla" state={{ state: param }}>
               <div className="flex items-center font-comfortaa bg-slate-300 w-fit py-2 px-4 rounded-md cursor-pointer shadow-md">
                 <span className="text-1xl text-slate-800 font-bold">
                   Constacia de Sueldo
@@ -224,7 +223,7 @@ export function EmpleDetail() {
             </Link>
           </div>
           <div className="md:w-fit ml-5 mt-3">
-            <Link to="/DinoCifrasPS/planilla" state={{ state: param }}>
+            <Link to="/DinoCifrasContablesPS/planilla" state={{ state: param }}>
               <div className="flex items-center font-comfortaa bg-slate-300 w-fit py-2 px-4 rounded-md cursor-pointer shadow-md">
                 <span className="text-1xl text-slate-800 font-bold">
                   Declaracion de Renta

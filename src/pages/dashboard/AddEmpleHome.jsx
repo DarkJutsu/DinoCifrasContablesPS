@@ -11,7 +11,7 @@ export function AddEmpleHome() {
           </span>
           <MdAddCircle
             className="text-emerald-400 text-7xl cursor-pointer mt-5 m-auto"
-            onClick={() => nav("/DinoCifrasPS/add")}
+            onClick={() => nav("/DinoCifrasContablesPS/add")}
           />
         </div>
       </div>

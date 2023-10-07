@@ -8,7 +8,7 @@ export function Header() {
       <div
         className="w-fit flex bottom-0 cursor-pointer"
         onClick={() => {
-          nav("/DinoCifrasPS/");
+          nav("/DinoCifrasContablesPS/");
         }}
       >
         <img className="w-24" src={logo} alt="Logo" />

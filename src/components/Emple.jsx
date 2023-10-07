@@ -11,7 +11,7 @@ export function Emple({ emp, remove }) {
   return (
     <>
       <div className="bg-slate-700 shadow-md rounded px-8 pt-6 pb-5 flex flex-col my-2 font-comfortaa">
-        <Link to="/DinoCifrasPS/detail" state={{ state: emp }}>
+        <Link to="/DinoCifrasContablesPS/detail" state={{ state: emp }}>
           <div className="flex justify-center pb-4">
             <PiUserFill className="text-8xl bg-slate-600 rounded-full p-2" />
           </div>

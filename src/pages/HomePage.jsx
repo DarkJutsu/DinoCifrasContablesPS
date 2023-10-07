@@ -14,7 +14,7 @@ export function HomePage() {
     return (
       <>
         <div
-          onClick={() => nav("/DinoCifrasPS/add")}
+          onClick={() => nav("/DinoCifrasContablesPS/add")}
           className="flex items-center font-comfortaa bg-emerald-400 w-fit py-2 px-4 rounded-md cursor-pointer"
         >
           <span className="text-2xl text-slate-800 font-bold">
@@ -39,7 +39,7 @@ export function HomePage() {
             <div className="-mx-3 md:flex mt-8">
               <div className="md:w-1/2 ml-5 mt-3">
                 <Link
-                  to="/DinoCifrasPS/planillaAll"
+                  to="/DinoCifrasContablesPS/planillaAll"
                   state={{ state: empleList }}
                 >
                   <div className="flex items-center font-comfortaa bg-slate-300 w-fit py-2 px-4 rounded-md cursor-pointer shadow-md">
