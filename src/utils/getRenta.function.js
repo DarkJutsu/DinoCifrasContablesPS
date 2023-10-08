@@ -23,7 +23,7 @@ export function getRenta(salario) {
     renta = renta * 0.2 + 60.0;
   } else if (TRAMOVI) {
     renta = salarioSinAFPISSS - 2038.1;
-    renta = renta * 0.2 + 288.57;
+    renta = renta * 0.3 + 288.57;
   }
 
   return renta.toFixed(2);

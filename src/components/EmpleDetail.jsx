@@ -12,6 +12,9 @@ import { BackBtn } from "./BackBtn";
 import { getAguinaldoEqui } from "../utils/getAguinaldoEqui.function";
 import { getDespido } from "../utils/getDespido.function";
 import { getRenuncia } from "../utils/getRenuncia.function";
+import { getBoletaPagos } from "../utils/getBoletaPagos.function";
+import { BsFiletypePdf } from "react-icons/bs";
+import { getIndemnizacion } from "../utils/getIndemnizacion.function";
 
 export function EmpleDetail() {
   const nav = useNavigate();
@@ -188,7 +191,7 @@ export function EmpleDetail() {
         <div className="-mx-3 md:flex mt-8">
           <div className="md:w-fit ml-5 mt-3">
             <Link to="/DinoCifrasContablesPS/planilla" state={{ state: param }}>
-              <div className="flex items-center font-comfortaa bg-slate-300 w-fit py-2 px-4 rounded-md cursor-pointer shadow-md">
+              <div className="flex items-center font-comfortaa hover:bg-slate-300 border border-slate-800 w-fit py-2 px-4 rounded-md cursor-pointer shadow-md">
                 <span className="text-1xl text-slate-800 font-bold">
                   Planilla de Pagos
                 </span>
@@ -196,43 +199,36 @@ export function EmpleDetail() {
             </Link>
           </div>
           <div className="md:w-fit ml-5 mt-3">
-            <Link to="/DinoCifrasContablesPS/planilla" state={{ state: param }}>
-              <div className="flex items-center font-comfortaa bg-slate-300 w-fit py-2 px-4 rounded-md cursor-pointer shadow-md">
-                <span className="text-1xl text-slate-800 font-bold">
-                  Boleta de Pago
+            <div onClick={() => getBoletaPagos(param)}>
+              <div className="flex items-center font-comfortaa hover:bg-slate-300 border border-slate-800 w-fit py-2 px-4 rounded-md cursor-pointer shadow-md">
+                <span className=" flex text-1xl text-slate-800 font-bold">
+                  Boleta de Pago <BsFiletypePdf className="text-2xl text-slate-700 ml-3" />
                 </span>
               </div>
-            </Link>
+            </div>
           </div>
           <div className="md:w-fit ml-5 mt-3">
-            <Link to="/DinoCifrasContablesPS/planilla" state={{ state: param }}>
-              <div className="flex items-center font-comfortaa bg-slate-300 w-fit py-2 px-4 rounded-md cursor-pointer shadow-md">
-                <span className="text-1xl text-slate-800 font-bold">
-                  Boleta de Indemnización
+            <div onClick={() => getIndemnizacion(param)}>
+              <div className="flex items-center font-comfortaa hover:bg-slate-300 border border-slate-800 w-fit py-2 px-4 rounded-md cursor-pointer shadow-md">
+                <span className="flex text-1xl text-slate-800 font-bold">
+                  Boleta de Indemnización <BsFiletypePdf className="text-2xl text-slate-700 ml-3" />
                 </span>
               </div>
-            </Link>
+            </div>
           </div>
           <div className="md:w-fit ml-5 mt-3">
-            <Link to="/DinoCifrasContablesPS/planilla" state={{ state: param }}>
-              <div className="flex items-center font-comfortaa bg-slate-300 w-fit py-2 px-4 rounded-md cursor-pointer shadow-md">
+            <Link
+              to="/DinoCifrasContablesPS/constancia"
+              state={{ state: param }}
+            >
+              <div className="flex items-center font-comfortaa hover:bg-slate-300 border border-slate-800 w-fit py-2 px-4 rounded-md cursor-pointer shadow-md">
                 <span className="text-1xl text-slate-800 font-bold">
                   Constacia de Sueldo
                 </span>
               </div>
             </Link>
           </div>
-          <div className="md:w-fit ml-5 mt-3">
-            <Link to="/DinoCifrasContablesPS/planilla" state={{ state: param }}>
-              <div className="flex items-center font-comfortaa bg-slate-300 w-fit py-2 px-4 rounded-md cursor-pointer shadow-md">
-                <span className="text-1xl text-slate-800 font-bold">
-                  Declaracion de Renta
-                </span>
-              </div>
-            </Link>
-          </div>
         </div>
-
       </div>
     </>
   );
