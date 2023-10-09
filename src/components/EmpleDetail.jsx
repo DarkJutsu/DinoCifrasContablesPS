@@ -223,7 +223,19 @@ export function EmpleDetail() {
             >
               <div className="flex items-center font-comfortaa hover:bg-slate-300 border border-slate-800 w-fit py-2 px-4 rounded-md cursor-pointer shadow-md">
                 <span className="text-1xl text-slate-800 font-bold">
-                  Constacia de Sueldo
+                  Constancia de Sueldo
+                </span>
+              </div>
+            </Link>
+          </div>
+          <div className="md:w-fit ml-5 mt-3">
+            <Link
+              to="/DinoCifrasContablesPS/declaracion"
+              state={{ state: param }}
+            >
+              <div className="flex items-center font-comfortaa hover:bg-slate-300 border border-slate-800 w-fit py-2 px-4 rounded-md cursor-pointer shadow-md">
+                <span className="text-1xl text-slate-800 font-bold">
+                  Declaracion Renta
                 </span>
               </div>
             </Link>

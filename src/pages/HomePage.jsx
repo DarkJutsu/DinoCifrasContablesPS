@@ -37,7 +37,7 @@ export function HomePage() {
           <div>
             <AddHome />
             <div className="-mx-3 md:flex mt-8">
-              <div className="md:w-1/2 ml-5 mt-3">
+              <div className="md:w-fit ml-5 mt-3">
                 <Link
                   to="/DinoCifrasContablesPS/planillaAll"
                   state={{ state: empleList }}

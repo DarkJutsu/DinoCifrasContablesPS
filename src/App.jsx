@@ -1,5 +1,6 @@
 import "./App.css";
 import { ConstanciaSueldo } from "./components/ConstanciaSueldo";
+import { DeclaracionRenta } from "./components/DeclaracionRenta";
 import { EmpleDetail } from "./components/EmpleDetail";
 import { PlanillaPagos } from "./components/PlanillaPagos";
 import { PlanillaPagosAll } from "./components/PlanillaPagosAll";
@@ -22,6 +23,7 @@ function App() {
         <Route path="/DinoCifrasContablesPS/planilla" element={<PlanillaPagos />} />
         <Route path="/DinoCifrasContablesPS/planillaAll" element={<PlanillaPagosAll />} />
         <Route path="/DinoCifrasContablesPS/constancia" element={<ConstanciaSueldo />} />
+        <Route path="/DinoCifrasContablesPS/declaracion" element={<DeclaracionRenta />} />
         <Route path="/DinoCifrasContablesPS/prueba" element={<MiComponente />} />
         {/* <Route path="/DinoCifrasContables/uso" element={<DepreUso />} />
         <Route path="/DinoCifrasContables/acelerada" element={<DepreAcelDecre />} /> */}

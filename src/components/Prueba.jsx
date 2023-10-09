@@ -1,21 +1,31 @@
+import { useState } from "react";
+
 export const MiComponente = () => {
-  // Definir las fechas (ignorando el año)
-  const fechaInicio = new Date("2022-05-28"); // 0 representa enero, 8 representa septiembre (meses basados en 0)
-  const fechaFin = new Date("2023-10-6"); // 9 representa octubre
+  // Definir estados para los valores de los inputs
+  const [inputTexto, setInputTexto] = useState("");
+  const [inputNumero, setInputNumero] = useState(0);
+  let nn = 190;
+  nn = nn * inputNumero;
 
-  // Calcular la diferencia en milisegundos
-  const diferenciaEnMilisegundos = fechaFin - fechaInicio;
+  // Manejar el cambio en el input de texto
+  const handleChangeTexto = (event) => {
+    setInputTexto(event.target.value);
+  };
 
-  // Convertir la diferencia a días
-  const diasTranscurridos = Math.floor(
-    diferenciaEnMilisegundos / (1000 * 60 * 60 * 24)
-  );
+  // Manejar el cambio en el input de número
+  const handleChangeNumero = (event) => {
+    setInputNumero(event.target.value);
+  };
 
   return (
     <div>
-      <h1>
-        {diasTranscurridos > 365 ? diasTranscurridos - 365 : diasTranscurridos}
-      </h1>
+      {/* Input de Texto */}
+      <input type="text" value={inputTexto} onChange={handleChangeTexto} />
+      <p>Texto ingresado: {inputTexto}</p>
+
+      {/* Input de Número */}
+      <input type="number" value={inputNumero} onChange={handleChangeNumero} />
+      <p>Número ingresado: {nn}</p>
     </div>
   );
 };

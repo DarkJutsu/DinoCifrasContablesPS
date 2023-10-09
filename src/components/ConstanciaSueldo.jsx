@@ -256,7 +256,7 @@ export const ConstanciaSueldo = () => {
               <thead className="bg-slate-400 font-bold text-sm">
                 <tr>
                   <th className="border border-slate-600 p-3 ">MES</th>
-                  <th className="border border-slate-600 p-3 w-">
+                  <th className="border border-slate-600 p-3 ">
                     REMUNERACIONES GRAVADAS DE ENERO A DICIEMBRE
                   </th>
                   <th className="border border-slate-600 p-3">
@@ -375,7 +375,7 @@ export const ConstanciaSueldo = () => {
                     ${getISSS(param.salario)}
                   </td>
                   <td className="border border-slate-600 p-3 text-right text-white bg-gray-500">
-                    ${salVaca}
+                    ${salVaca.toFixed(2)}
                   </td>
                 </tr>
                 <tr>
